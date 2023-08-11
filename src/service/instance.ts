@@ -3,7 +3,7 @@ import Cookies from 'js-cookie';
 const token = Cookies.get('token')
 
 const instance = axios.create({
-    baseURL: 'http://13.127.146.183:5070/api',
+    baseURL: 'http://ec2-13-127-146-183.ap-south-1.compute.amazonaws.com:5070/api',
     headers:{
         Authorization: token
     }
