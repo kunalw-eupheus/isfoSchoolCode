@@ -25,7 +25,12 @@ export const checkSchoolCode =async (code:string) => {
             logout()
             window.location.href = "/";
         }
-
+        if( e.response.status === 422){
+            return {
+            status:"error",
+            message:e.response.message
+        }
+        }
         return {
             status:"error",
             message:"server error"
