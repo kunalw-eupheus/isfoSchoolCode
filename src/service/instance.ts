@@ -3,7 +3,7 @@ import Cookies from 'js-cookie';
 const token = Cookies.get('token')
 
 const instance = axios.create({
-    baseURL: 'http://ec2-13-127-146-183.ap-south-1.compute.amazonaws.com:5070/api',
+    baseURL: 'https://schoolcheck.skool.ai/api',
     headers:{
         Authorization: token
     }
