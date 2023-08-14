@@ -28,7 +28,7 @@ export const checkSchoolCode =async (code:string) => {
         if( e.response.status === 422){
             return {
             status:"error",
-            message:e.response.message
+            message:"School Code Already Exists"
         }
         }
         return {
